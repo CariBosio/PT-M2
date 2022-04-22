@@ -60,7 +60,10 @@ ToDo.prototype.completeToDo = function() {
 function buildToDo(todo, index) {
     // Tu código acá:
     var toDoShell = document.createElement("div");
-    toDoShell.className = "toDoShell";
+    toDoShell.className = "toDoShell"; //para crear una clase
+    // toDoShell.classList.add('toDoShell'); //para crear una clase igual que arriba
+    // toDoShelll.setAttribute('class', 'toDoShell'); //para crear una clase igual que arriba
+
     var toDoText = document.createElement("span");
 
     var checkbox = document.createElement("input"); //Crear un checkboxbox en la función 'buildToDo'  //creo un input
@@ -80,6 +83,7 @@ function buildToDo(todo, index) {
         checkbox.checked = true; //la función buildToDo, si es true, setear el atributo 'checked' en true en el checkbox
         //la función buildToDo, si es true, setear el atributo 'checked' en true en el checkbox
 
+        //toDoText.className = todo.complete ? 'completeText' : ''; //otra forma 
         // todo.complete && (toDoText.className = 'completeText');  //otra forma , si lo que está a la izq de &&, entonces hago lo que está a la derecha de &&
     }
 
@@ -128,7 +132,7 @@ function buildToDos(toDos) {
 
 function displayToDos() {
     // Tu código acá:
-    var toDoContainer = document.querySelector('#toDoContainer');
+    const toDoContainer = document.querySelector('#toDoContainer');
     toDoContainer.innerHTML = ' ';
     let build = buildToDos(toDoItems);
     for (let i = 0; i < build.length; i++) {
@@ -165,6 +169,7 @@ function addToDo() {
 // Tu código acá:
 let add = document.querySelector('#addButton');
 add.addEventListener('click', addToDo); //acción-reacción //no le paso la invocación a la función, sino la función
+//add.onclick = function() {addToDo()}  //otra forma
 
 // La función completeToDo se va a ejecutar cuando queramos completar un todo
 // [NOTA: Algunas cuestiones a tener en cuenta
