@@ -1,1 +1,123 @@
 // Código de Nav acá
+nav {
+  display: flex; //metodología de un componente al lado del otro
+  flex-direction: column; //dirección vertical
+  align-items: center; //alineación centrado
+  background-color: @nav-bg;
+  border-bottom: 3px solid @nav-border; //borde inferior del nav
+  position: fixed;
+  background: @wild-sand;
+  opacity: 0.9; //os 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad
+  z-index: 100%;
+  top: 0;
+  width: 100%;
+
+  //.flex(column, center, center);
+
+  h2 {
+    margin: 3rem;
+    // margin: 3rem  0rem  3rem  0rem;  //top, rigth, botton, left -en el orden de las agujas del reloj
+    // margin: 3rem  0rem ;  /
+    // animation-duration: 3s;
+    // animation-name: slidein, change-color;
+    // animation-iteration-count: 5; //infinito o numero de veces que quiero que se repita
+    // animation-direction: alternate;
+
+    // @keyframes slidein {
+    //   from {
+    //     margin-left: 375%;
+    //     width: 300%;
+    //     color: rgb(118, 132, 64);
+    //   }
+
+    //   to {
+    //     margin-left: 0%;
+    //     width: 95%;
+    //   }
+    // }
+
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    // text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: @nav-font;
+
+  li {
+    margin-left: 2rem; //para ir separando el texto
+  }
+
+  li {
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      //agrego sobre el li una propiedad after, como un adicional
+      transition: 0.5s;
+      content: "";
+      position: absolute; //posición absoluta sobre la posición relativa del li
+      border-bottom: 3px solid @ebony-clay;
+      top: 140%;
+      left: 50%;
+      right: 50%;
+      width: 0%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    &:hover {
+      //si tengo el mouse sobre, quiero que cambies:
+      &::after {
+        left: 0%;
+        right: 0%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// justify-content: space-around ;
+
+// .flex(row, space-around);
+//    width: 35%;
+//    margin: 10px;
+
+// @media (max-width: @phone){
+//     width: 80%;
+// }
+
+// a{
+//     white-space: nowrap;
+//     text-decoration: none;
+//     color: @nav-font;
+//     font-weight: bold;
+//  }
