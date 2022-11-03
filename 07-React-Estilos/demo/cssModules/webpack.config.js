@@ -10,7 +10,7 @@ module.exports = {
          test: /\.(js|jsx)$/,
          exclude: /node_modules/,
          use: {
-           loader: 'babel-loader',
+           loader: 'babel-loader',  //le aplica babel
            options: {
              presets: ['@babel/preset-react', '@babel/preset-env']
            }
@@ -24,11 +24,11 @@ module.exports = {
             loader: "style-loader"
           },
           {
-            loader: "css-loader",
+            loader: "css-loader",  //le aplica ccs-loader
             options: 
               {
                 modules: {
-                  localIdentName: "[local]___[hash:base64:5]"
+                  localIdentName: "[local]___[hash:base64:5]"  //le coloca el nombre de la clase y un hash
                 }
               }
           }
@@ -36,7 +36,7 @@ module.exports = {
       },{
         // global
         test: /\.gcss$/,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader'], // le aplica style-loader y css-loader
       },
     ],
   },

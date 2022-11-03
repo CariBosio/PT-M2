@@ -9,3 +9,6 @@
 .hola {
   font-size: 30px;
 }
+
+
+/* como no está definido producto p gana el global y se queda verde */

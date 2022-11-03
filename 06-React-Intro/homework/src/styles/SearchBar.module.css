@@ -1,0 +1,72 @@
+.container {
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  height: 40px;
+  align-items: center;
+}
+
+/* .icon {
+  margin: 8px 16px;
+  color: #8d99ae;
+} */
+
+.btn {
+  color: white;
+  background-color: #495057;
+  box-shadow: 6px 6px 6px #999;
+  transition: all 0.2s ease 0s;
+}
+
+.btn:hover {
+  color: #495057;
+  background-color: white;
+}
+
+/* !Hecho por Diego */
+
+/* .searchBar {
+  border: solid 1px #8d99ae;
+  justify-content: flex-end;
+  width: fit-content;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  box-shadow: 1px 1px 4px #8d99ae;
+  /* sombra */
+/*}*/
+
+/*.icon {
+  margin: 8px 16px;
+  color: #8d99ae;
+}
+
+.input {
+  padding: 8px;
+  border: none;
+}
+
+.input::placeholder {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.submit {
+  background-color: #3a86ff;
+  border: none;
+  color: white;
+  height: 100%;
+  text-transform: uppercase;
+  /* transforma el texto en mayùscula */
+/* font-size: 14px;
+  padding: 4px 12px;
+  min-width: 48px;
+  font-weight: 700;
+} */

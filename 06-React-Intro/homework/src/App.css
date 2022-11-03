@@ -1,5 +1,14 @@
+/* !Estilos globales */
 .App {
   text-align: center;
+  /* background-image: url("/img/nubes.jpg"); */
+  background: linear-gradient(to bottom, #2c6cbc, #71c3f7, #f6f6f6);
+  border-radius: 15px;
+  box-shadow: 20px 20px 20px #454b58;
+  background-repeat: no-repeat;
+  margin: 20px;
+  height: 100%;
+  background-size: cover;
 }
 
 .App-logo {
@@ -35,4 +44,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.searchBarBg {
+  background-color: grey;
 }

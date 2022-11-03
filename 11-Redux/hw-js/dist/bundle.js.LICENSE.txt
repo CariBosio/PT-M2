@@ -1,0 +1,3 @@
+//!En esta linea creamos nuestro Store. Pasandole como parámetro nuestro Reducer
+
+//!Objetos que tienen como propiedad obligatoria el type

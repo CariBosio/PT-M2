@@ -1,0 +1,3 @@
+//!  Renderizar componentes
+
+//!Toda la info necesaria para que renderice nuestra App

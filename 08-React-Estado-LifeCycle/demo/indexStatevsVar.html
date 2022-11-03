@@ -2,21 +2,21 @@
 <html>
 
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title>Henry - State vs Var</title>
 </head>
 
 <body>
   <div id='app'></div>
 
-  <script crossorigin src="https://unpkg.com/react@16.8/umd/react.development.js" ></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16.8/umd/react-dom.development.js" ></script>
+  <script crossorigin src="https://unpkg.com/react@16.8/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16.8/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
   <script type="text/babel">
 
- class StateContador extends React.Component{
+    class StateContador extends React.Component{
    constructor(props) {
-     super(props);
+     super(props);   //invoca al constructor de React.Component
      this.state = {
        contador: this.props.contador
       }
@@ -25,7 +25,8 @@
     }
     
     onButtonClick = () => {
-      this.setState((state) => {
+      //state = this.state, se lo pasa setState, es un callback
+      this.setState((state) => {  //valor que tiene el estado en este preciso instante
           return {contador: state.contador + 1}
      });
       console.log("Actualicé mi state :", this.state.contador)

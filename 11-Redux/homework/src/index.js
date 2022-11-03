@@ -1,15 +1,10 @@
-export const INCREMENT = 'INCREMENT';
-export const DECREMENT = 'DECREMENT';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import Counter from './components/Counter'
+import counter from './reducers';
 
-// Nuestras actions (action creators) devolverán un paquete de actions que nuestro reducer recibirá. 
-// ¿Cómo es el paquete de acción? Tengan en cuenta que el creador de la acción no es en absoluto responsable 
-// de manejar ninguna de las lógicas actuales de actualización del store central de Redux.
-// Eso se lo deja al reducer(s).
-
-export const increment = () => {
-  // Completa la funcion
-};
-
-export const decrement = () => {
-  // Completa la funcion
-};
+//Esta linea instancia nuestro store central de Redux
+//La funcion 'createStore' recibe el reducer
+ 

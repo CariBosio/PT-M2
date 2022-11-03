@@ -1,0 +1,95 @@
+/* !boton X de cerrar */
+
+.btn {
+  background-color: #495057;
+  width: 25px;
+  border-radius: 5px;
+  margin: 5px;
+  align-self: flex-end;
+  align-items: center;
+  box-shadow: 2px 2px 2px #525863;
+}
+
+.btnColor {
+  color: white;
+}
+
+.btn:hover {
+  color: black;
+  background-color: white;
+}
+
+/* !parte del min y max */
+
+.DivMiddle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* !div inicial o màs importante */
+
+.cardLondres {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  align-content: center;
+  border: 2px solid grey;
+  border-radius: 10px;
+  height: 250px;
+  /* background-color: white; */
+  background: linear-gradient(to bottom, #557c93, #08203e);
+  /* background-image: url("/img/londres-bigben-cabina-coronavirus.jpg"); */
+  align-items: center;
+  box-shadow: 15px 15px 15px #525863;
+  transition: transform 0.2s;
+  color: white;
+}
+
+.cardLondres:hover {
+  transform: scale(1.1);
+}
+
+/* !diferente fondo por pais */
+
+/* .cardCairns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 350px;
+  align-content: center;
+  border: 2px solid grey;
+  border-radius: 10px;
+  height: 250px;
+  background-color: white;*/
+
+/* background-image: url("/img/Cairns.jpg");
+  opacity: 0.5; */
+/*align-items: center;
+  box-shadow: 10px 10px 10px #525863;
+  transition: transform 0.2s;
+} */
+
+/* .cardLondres:hover {
+  transform: scale(1.2);
+} */
+
+/* .cardDenver {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-content: center;
+  border: 2px solid grey;
+  border-radius: 10px;
+  height: 250px;
+  background-color: yellow;
+  background-image: url("/img/Denver.jpg"); */
+/* } */
+.divTemperature {
+  margin: 15px;
+}

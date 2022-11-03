@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title>Henry - useState Function update vs value update</title>
 </head>
 
@@ -14,7 +14,7 @@
   <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
   <script type="text/babel">
-  const { useState, useEffect } = React;
+    const { useState, useEffect } = React;
  
   function Contador(props) {
     const [contador, setContador] = useState(props.contador);
@@ -24,9 +24,9 @@
       setContador(contador + 1)
       setContador(contador + 1)
     }
-
+//más recomendable esta forma
     const incrementarFunction = () =>{
-      setContador((prevState) => prevState + 1)
+      setContador((prevState) => prevState + 1) //esta forma detecta enseguida el cambio, hace referencia al estado anterior 
       setContador((prevState) => prevState + 1)
     }
 

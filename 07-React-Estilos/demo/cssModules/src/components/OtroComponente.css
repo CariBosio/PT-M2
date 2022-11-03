@@ -1,0 +1,21 @@
+/* !Lo hice yo */
+
+.producto {
+    color: red;
+    background-color: white;
+    font-size: 30px;
+  }
+  
+  .producto p {
+    text-decoration: none;
+    color:blue;
+  }
+  
+  /* .producto {
+    color: rgb(79, 71, 140);
+  }
+  
+  .hola {
+    font-size: 30px;
+  } */
+  

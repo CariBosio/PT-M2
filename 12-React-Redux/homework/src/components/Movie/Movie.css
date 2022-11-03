@@ -1,7 +1,7 @@
 .movie-card {
   font: 14px/22px "Lato", Arial, sans-serif;
-  color: #A9A8A3;
-  padding: 40px 0;
+  color: #a9a8a3;
+  padding: 40px;
 }
 
 .container {
@@ -13,40 +13,38 @@
   position: relative;
 }
 
-
-
 .details {
   padding: 50px 0 0 50px;
 }
 
 .title {
-    color: white;
-    font-size: 40px;
-    margin-bottom: 13px;
-    line-height: normal;
-    position: relative;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 13px;
+  line-height: normal;
+  position: relative;
+  margin-left: 20px;
 }
 .title span {
-    margin-left: 12px;
-    background: #C4AF3D;
-    border-radius: 5px;
-    color: #544C21;
-    font-size: 14px;
-    padding: 0px 4px;
-  }
+  margin-left: 12px;
+  background: #c4af3d;
+  border-radius: 5px;
+  color: #544c21;
+  font-size: 14px;
+  padding: 0px 4px;
+}
 .description {
   bottom: 0px;
   height: 200px;
   font-size: 16px;
   line-height: 26px;
-  color: #B1B0AC;
-  
+  color: #b1b0ac;
 }
 .column {
-    padding-left: 41px;
-    padding-top: 30px;
-    margin-left: 20px;
-    width: 480px;
+  padding-left: 41px;
+  padding-top: 30px;
+  margin-left: 20px;
+  width: 480px;
 }
 
 .img img {
@@ -58,5 +56,3 @@
   display: flex;
   flex-direction: row;
 }
-
-

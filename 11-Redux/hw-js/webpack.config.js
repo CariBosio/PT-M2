@@ -1,6 +1,7 @@
 // webpack.config.js`
 module.exports = {
   entry: './src/index.js', // el punto de arranque de nuestro programa
+  mode: 'development',  //!agregado por mi porque no funcionaba
   output: {
     path: __dirname + '/dist', // el path absoluto para
     	// el directorio donde queremos que el output sea colocado
