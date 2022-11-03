@@ -1,8 +1,258 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+.App {
+  background-color:black;
+}
+
+.contenido{
+  text-align: center;
+  /* background: linear-gradient(to bottom, #2c6cbc, #5B69C1, #8065C1, #A05EBC, #BD57B1, #D64FA3); */
+  /* background-image: url(https://res.cloudinary.com/carina-bosio/image/upload/v1666578678/azul_xxbfbc.jpg); */
+  background: #000;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  min-height: calc(100vh - 2rem);
+  height: auto;
+  width: 100vw;
+  
+  
+}
+
+.contenido:before,
+.contenido:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 100%;
+  opacity: 0.18;
+}
+.contenido:before {
+  box-shadow: 0 0 35vmax 35vmax #f00;
+  animation: hue 5s 0s linear infinite, move1 10s 0s linear infinite;
+}
+.contenido:after {
+  box-shadow: 0 0 35vmax 35vmax #0ff;
+  animation: hue 10s 0s linear infinite, move2 20s 0s linear infinite;
+}
+@-moz-keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@-webkit-keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@-o-keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@-moz-keyframes move1 {
+  0% {
+    top: 0vh;
+    left: 50vw;
+  }
+  25% {
+    left: 0vw;
+  }
+  50% {
+    top: 100vh;
+  }
+  75% {
+    left: 100vw;
+  }
+  100% {
+    top: 0vh;
+    left: 50vw;
+  }
+}
+@-webkit-keyframes move1 {
+  0% {
+    top: 0vh;
+    left: 50vw;
+  }
+  25% {
+    left: 0vw;
+  }
+  50% {
+    top: 100vh;
+  }
+  75% {
+    left: 100vw;
+  }
+  100% {
+    top: 0vh;
+    left: 50vw;
+  }
+}
+@-o-keyframes move1 {
+  0% {
+    top: 0vh;
+    left: 50vw;
+  }
+  25% {
+    left: 0vw;
+  }
+  50% {
+    top: 100vh;
+  }
+  75% {
+    left: 100vw;
+  }
+  100% {
+    top: 0vh;
+    left: 50vw;
+  }
+}
+@keyframes move1 {
+  0% {
+    top: 0vh;
+    left: 50vw;
+  }
+  25% {
+    left: 0vw;
+  }
+  50% {
+    top: 100vh;
+  }
+  75% {
+    left: 100vw;
+  }
+  100% {
+    top: 0vh;
+    left: 50vw;
+  }
+}
+@-moz-keyframes move2 {
+  0% {
+    top: 50vh;
+    left: 100vw;
+  }
+  25% {
+    top: 100vh;
+  }
+  50% {
+    left: 0vw;
+  }
+  75% {
+    top: 0vh;
+  }
+  100% {
+    top: 50vh;
+    left: 100vw;
+  }
+}
+@-webkit-keyframes move2 {
+  0% {
+    top: 50vh;
+    left: 100vw;
+  }
+  25% {
+    top: 100vh;
+  }
+  50% {
+    left: 0vw;
+  }
+  75% {
+    top: 0vh;
+  }
+  100% {
+    top: 50vh;
+    left: 100vw;
+  }
+}
+@-o-keyframes move2 {
+  0% {
+    top: 50vh;
+    left: 100vw;
+  }
+  25% {
+    top: 100vh;
+  }
+  50% {
+    left: 0vw;
+  }
+  75% {
+    top: 0vh;
+  }
+  100% {
+    top: 50vh;
+    left: 100vw;
+  }
+}
+@keyframes move2 {
+  0% {
+    top: 50vh;
+    left: 100vw;
+  }
+  25% {
+    top: 100vh;
+  }
+  50% {
+    left: 0vw;
+  }
+  75% {
+    top: 0vh;
+  }
+  100% {
+    top: 50vh;
+    left: 100vw;
+  }
+}
+
+
+
+
 
 .row {
   display: flex;
   justify-content: center;
 }
+
+footer {
+  position: relativa;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black !important;
+  
+}
+
+.colorfooter{
+  color: white;
+  font-size: 15px;;
+
+}
+
+
+

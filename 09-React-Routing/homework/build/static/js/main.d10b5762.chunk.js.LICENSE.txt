@@ -1,0 +1,3 @@
+//!Componente de clase
+
+//!Componente de funcion
